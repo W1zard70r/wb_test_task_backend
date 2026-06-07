@@ -1,0 +1,12 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+db.sqlite3
+logs/*.log
+staticfiles
+Задание для стажеров на Backend.docx.pdf
+frontend/node_modules
+frontend/dist
