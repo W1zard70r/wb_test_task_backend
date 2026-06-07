@@ -57,6 +57,14 @@ API будет доступно на `http://localhost:8001`.
 - ReDoc: `http://localhost:8001/api/redoc/`
 - OpenAPI schema: `http://localhost:8001/api/schema/`
 
+Админ-панель:
+
+- URL: `http://localhost:8001/admin/`
+- Логин: `admin`
+- Пароль: `admin12345`
+
+Демо-админ создается автоматически при запуске Docker Compose. Учетные данные можно переопределить через `DEMO_ADMIN_USERNAME`, `DEMO_ADMIN_EMAIL`, `DEMO_ADMIN_PASSWORD`.
+
 ## Локальный запуск без Docker
 
 ```bash

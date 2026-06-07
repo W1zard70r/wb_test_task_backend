@@ -9,4 +9,10 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = UserAdmin.fieldsets + (
         ("Marketplace", {"fields": ("balance",)}),
     )
-    list_display = ("id", "username", "email", "balance", "is_staff")
+    add_fieldsets = UserAdmin.add_fieldsets + (
+        ("Marketplace", {"fields": ("email", "balance")}),
+    )
+    list_display = ("id", "username", "email", "balance", "is_staff", "is_superuser", "is_active")
+    list_filter = ("is_staff", "is_superuser", "is_active")
+    search_fields = ("username", "email")
+    ordering = ("username",)
